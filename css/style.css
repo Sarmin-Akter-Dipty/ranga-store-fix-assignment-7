@@ -63,12 +63,13 @@ font-size: xx-large;
 }
 /* Media Queries Section */
 @media only screen and (max-width: 768px) {
-  #all-products .flex {
+  #all-products  {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 200%;
   }
   .cart {
-    width: 300px;
+    width: 150%;
     padding: 10px;
     box-shadow: 10px 10px 20px gray;
     border-radius: 5px;
@@ -78,10 +79,17 @@ font-size: xx-large;
   .cart-main {
     padding-right: 10px;
   }
+  .flex{
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 468px) {
-  #all-products .flex {
+  #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    width: 200%;
+  }
+  .flex{
+    width: 100%; 
   }
 }
